@@ -1,6 +1,6 @@
 <ion-header>
-    <ion-navbar>
-        <ion-title>Home</ion-title>
+    <ion-navbar color="white">
+        <img height="40" src="assets/imgs/logo.png" alt="">
     </ion-navbar>
 </ion-header>
 
@@ -8,11 +8,16 @@
     <ion-list no-lines>
         <ion-item *ngFor="let list of lists">
             <ion-card>
-                <ion-card-header>
-                    Card
-                </ion-card-header>
+                <ion-item (click)="mCreateEvent(list)">
+                    <ion-avatar item-start>
+                        <img src="assets/imgs/hackerearth.png">
+                    </ion-avatar>
+                    <h2>{{list.title}}</h2>
+                    <p>Hackerearth</p>
+                </ion-item>
                 <ion-card-content>
-                    Content
+                    <p>{{list.start_timestamp}}</p>
+                    <p>{{list.end_timestamp}}</p>
                 </ion-card-content>
             </ion-card>
         </ion-item>
