@@ -8,7 +8,7 @@
     <ion-list no-lines>
         <ion-item *ngFor="let list of lists">
             <ion-card>
-                <ion-item (click)="mCreateEvent(list)">
+                <ion-item>
                     <ion-avatar item-start>
                         <img src="assets/imgs/hackerearth.png">
                     </ion-avatar>
@@ -19,6 +19,14 @@
                     <p>{{list.start_timestamp}}</p>
                     <p>{{list.end_timestamp}}</p>
                 </ion-card-content>
+                <ion-row>
+                    <ion-col text-center>
+                      <button ion-button icon-start clear small (click)="mCreateEvent(list)">
+                        <ion-icon name="calendar"></ion-icon>
+                        <div>Add to calendar</div>
+                      </button>
+                    </ion-col>
+                </ion-row>
             </ion-card>
         </ion-item>
     </ion-list>
