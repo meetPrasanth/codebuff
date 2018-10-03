@@ -4,29 +4,29 @@
     </ion-navbar>
 </ion-header>
 
-<ion-content padding>
+<ion-content no-padding>
     <ion-list no-lines>
         <ion-item *ngFor="let list of lists">
-            <ion-card>
-                <ion-item>
-                    <ion-avatar item-start>
-                        <img src="assets/imgs/hackerearth.png">
-                    </ion-avatar>
+            <ion-card [style.border-top]="list.style">
+                <ion-item class="item-title">
                     <h2>{{list.title}}</h2>
-                    <p>Hackerearth</p>
+                    <p class="portal" [style.background]="list.color">{{list.portal}}</p>
                 </ion-item>
                 <ion-card-content>
-                    <p>{{list.start_timestamp}}</p>
-                    <p>{{list.end_timestamp}}</p>
+                    <ion-grid>
+                        <ion-row no-padding>
+                            <ion-col col-auto>
+                                <p>{{list.start_timestamp}}</p>
+                                <p>{{list.end_timestamp}}</p>
+                            </ion-col>
+                            <ion-col text-right no-padding>
+                                <button ion-button icon-only clear (click)="mCreateEvent(list)">
+                                    <ion-icon name="calendar"></ion-icon>
+                                </button>
+                            </ion-col>
+                        </ion-row>
+                    </ion-grid>
                 </ion-card-content>
-                <ion-row>
-                    <ion-col text-center>
-                      <button ion-button icon-start clear small (click)="mCreateEvent(list)">
-                        <ion-icon name="calendar"></ion-icon>
-                        <div>Add to calendar</div>
-                      </button>
-                    </ion-col>
-                </ion-row>
             </ion-card>
         </ion-item>
     </ion-list>

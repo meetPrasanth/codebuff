@@ -9,19 +9,28 @@
             align-items: center;
         }
 
-        h2 {
-            text-overflow: ellipsis;
-            overflow: hidden;
-        }
+        .item-title {
 
-        ion-avatar {
-            margin: 8px !important;
-        }
-
-        ion-item {
-            padding: 0px;
             ion-label {
-                margin: 0px;
+                margin: 5px 0px 0px 0px !important;
+            }
+
+            h2 {
+                text-overflow: ellipsis;
+                overflow: hidden;
+            }
+        }
+
+        .portal{
+            color: white;
+            display: inline-block;
+            padding: 3px 10px;
+        }
+
+        button{
+
+            ion-icon {
+                color: #F19CA4;
             }
         }
     }

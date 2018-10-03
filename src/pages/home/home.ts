@@ -50,12 +50,14 @@ export class HomePage {
     }
 
     mGetHackerearth() {
-        console.log("get hackerearth");
         this.http.get('https://www.hackerearth.com/chrome-extension/events', {}, {})
             .then(data => {
-                console.log("data", data);
                 this.lists = JSON.parse(data['data'])['response'];
-                console.log("data", this.lists);
+                this.lists.forEach(element => {
+                    element.color = '#2C3454';
+                    element.style = '3px solid ' + element.color;
+                    element.portal = 'HACKEREARTH';
+                });
             }).catch(err => {
                 console.log("error", err);
             });
