@@ -9,6 +9,11 @@
             align-items: center;
         }
 
+        ion-label {
+            margin-top: 8px !important;
+            margin-bottom: 0px !important;
+        }
+
         .item-title {
 
             ion-label {
@@ -25,6 +30,7 @@
             color: white;
             display: inline-block;
             padding: 3px 10px;
+            font-size: 1rem;
         }
 
         button{
