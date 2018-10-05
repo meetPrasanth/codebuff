@@ -1,0 +1,103 @@
+
+.md {
+
+    page-upcoming {
+
+        .toolbar-content {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        ion-card {
+            box-shadow: 0 2px 12px 0 #dfe3eb;
+            border-top: 3px solid #70D5DA;
+
+            ion-label {
+                margin-top: 8px !important;
+                margin-bottom: 0px !important;
+            }
+
+            .item-title {
+
+                ion-label {
+                    margin: 5px 0px 0px 0px !important;
+                }
+
+                h2 {
+                    text-overflow: ellipsis;
+                    overflow: hidden;
+                }
+            }
+
+            .portal{
+                color: white;
+                display: inline-block;
+                padding: 3px 10px;
+                font-size: 1rem;
+                background: #70D5DA;
+            }
+
+            button{
+
+                ion-icon {
+                    color: darkslategray;
+                }
+            }
+        }
+    }
+
+    .OTHER {
+        ion-card {
+            border-top: 3px solid #F19CA4;
+            .portal {
+                background: #F19CA4;
+            }
+        }
+    }
+
+    .HACKEREARTH {
+        ion-card {
+            border-top: 3px solid #2C3454;
+            .portal {
+                background: #2C3454;
+            }
+        }
+    }
+
+    .HACKERRANK {
+        ion-card {
+            border-top: 3px solid #1DA94C;
+            .portal {
+                background: #1DA94C;
+            }
+        }
+    }
+
+    .CODEFORCES {
+        ion-card {
+            border-top: 3px solid #F9D058;
+            .portal {
+                background: #F9D058;
+            }
+        }
+    }
+
+    .TOPCODER {
+        ion-card {
+            border-top: 3px solid #0980FF;
+            .portal {
+                background: #0980FF; 
+            }
+        }
+    }
+
+    .COJ {
+        ion-card {
+            border-top: 3px solid #4C83C3;
+            .portal {
+                background: #4C83C3; 
+            }
+        }
+    }
+}

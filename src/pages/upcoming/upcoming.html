@@ -6,21 +6,24 @@
 
 <ion-content no-padding>
     <ion-list no-lines>
-        <ion-item *ngFor="let list of lists">
-            <ion-card [style.border-top]="list.style">
+        <ion-item *ngFor="let contest of upComingContests" [class]="contest.Platform">
+            <ion-card>
+            <!-- [style.border-top]="list.style"> -->
                 <ion-item class="item-title">
-                    <h2>{{list.title}}</h2>
-                    <p class="portal" [style.background]="list.color">{{list.portal}}</p>
+                    <h2>{{contest.Name}}</h2>
+                    <p class="portal">
+                    <!-- [style.background]="list.color"> -->
+                    {{contest.Platform}}</p>
                 </ion-item>
                 <ion-card-content>
                     <ion-grid>
                         <ion-row no-padding>
                             <ion-col col-auto>
-                                <p>{{list.start_timestamp}}</p>
-                                <p>{{list.end_timestamp}}</p>
+                                <p>{{contest.StartTime}}</p>
+                                <p>{{contest.EndTime}}</p>
                             </ion-col>
                             <ion-col text-right no-padding>
-                                <button ion-button icon-only clear (click)="mCreateEvent(list)">
+                                <button ion-button icon-only clear (click)="mCreateEvent(contest)">
                                     <ion-icon name="calendar"></ion-icon>
                                 </button>
                             </ion-col>
