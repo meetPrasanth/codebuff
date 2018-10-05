@@ -1,9 +1,13 @@
 <?xml version='1.0' encoding='utf-8'?>
-<widget id="io.ionic.starter" version="0.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+<widget id="com.codebuff" version="1.0" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
     <name>Code Buff</name>
-    <description>An app to track your coding and problem solving challenges to remember.</description>
+    <description>Code buff is an application, which is used to have a single place to view all the coding 
+        contests happening across so many different platforms. This app aims to promote and help grow the 
+        competitive programming community worldwide. 
+        The app covers popular coding websites such as Codechef, 
+        Codeforces, Topcoder, HackerRank, HackerEarth and others.</description>
     <author email="onlyyprasanth@gmail.com">Prasanth Venkatesan</author>
-    <content original-src="index.html" src="http://192.168.1.14:8134" />
+    <content src="index.html" />
     <access origin="*" />
     <allow-intent href="http://*/*" />
     <allow-intent href="https://*/*" />
@@ -118,5 +122,9 @@
     <allow-navigation href="http://192.168.1.14:8132" />
     <allow-navigation href="http://192.168.1.14:8133" />
     <allow-navigation href="http://192.168.1.14:8134" />
+    <allow-navigation href="http://192.168.43.88:8135" />
+    <allow-navigation href="http://192.168.43.88:8136" />
+    <allow-navigation href="http://192.168.43.88:8137" />
+    <allow-navigation href="http://192.168.43.88:8138" />
     <engine name="android" spec="7.0.0" />
 </widget>
