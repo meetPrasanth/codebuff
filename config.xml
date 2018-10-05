@@ -3,7 +3,7 @@
     <name>Code Buff</name>
     <description>An app to track your coding and problem solving challenges to remember.</description>
     <author email="onlyyprasanth@gmail.com">Prasanth Venkatesan</author>
-    <content original-src="index.html" src="http://192.168.43.88:8102" />
+    <content original-src="index.html" src="http://192.168.1.14:8133" />
     <access origin="*" />
     <allow-intent href="http://*/*" />
     <allow-intent href="https://*/*" />
@@ -21,6 +21,7 @@
     <preference name="SplashScreenDelay" value="3000" />
     <platform name="android">
         <allow-intent href="market:*" />
+        <preference name="loadUrlTimeoutValue" value="700000" />
         <icon density="ldpi" src="resources/android/icon/drawable-ldpi-icon.png" />
         <icon density="mdpi" src="resources/android/icon/drawable-mdpi-icon.png" />
         <icon density="hdpi" src="resources/android/icon/drawable-hdpi-icon.png" />
@@ -86,5 +87,35 @@
     <plugin name="cordova-plugin-advanced-http" spec="^1.11.1" />
     <allow-navigation href="http://192.168.43.88:8101" />
     <allow-navigation href="http://192.168.43.88:8103" />
+    <allow-navigation href="http://192.168.43.88:8104" />
+    <allow-navigation href="http://192.168.43.88:8105" />
+    <allow-navigation href="http://192.168.43.88:8106" />
+    <allow-navigation href="http://192.168.43.88:8107" />
+    <allow-navigation href="http://192.168.43.88:8108" />
+    <allow-navigation href="http://192.168.43.88:8109" />
+    <allow-navigation href="http://192.168.43.88:8110" />
+    <allow-navigation href="http://192.168.43.88:8112" />
+    <allow-navigation href="http://192.168.1.14:8112" />
+    <allow-navigation href="http://192.168.1.14:8113" />
+    <allow-navigation href="http://192.168.1.14:8114" />
+    <allow-navigation href="http://192.168.1.14:8115" />
+    <allow-navigation href="http://192.168.1.14:8116" />
+    <allow-navigation href="http://192.168.1.14:8117" />
+    <allow-navigation href="http://192.168.1.14:8118" />
+    <allow-navigation href="http://192.168.1.14:8119" />
+    <allow-navigation href="http://192.168.1.14:8120" />
+    <allow-navigation href="http://192.168.1.14:8121" />
+    <allow-navigation href="http://192.168.1.14:8122" />
+    <allow-navigation href="http://192.168.1.14:8123" />
+    <allow-navigation href="http://192.168.1.14:8124" />
+    <allow-navigation href="http://192.168.1.14:8125" />
+    <allow-navigation href="http://192.168.1.14:8126" />
+    <allow-navigation href="http://192.168.1.14:8127" />
+    <allow-navigation href="http://192.168.1.14:8128" />
+    <allow-navigation href="http://192.168.1.14:8129" />
+    <allow-navigation href="http://192.168.1.14:8130" />
+    <allow-navigation href="http://192.168.1.14:8131" />
+    <allow-navigation href="http://192.168.1.14:8132" />
+    <allow-navigation href="http://192.168.1.14:8133" />
     <engine name="android" spec="7.0.0" />
 </widget>

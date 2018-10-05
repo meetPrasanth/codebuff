@@ -8,9 +8,8 @@
     <ion-row *ngIf="isLoading" class="spinner-center">
         <ion-spinner name="dots"></ion-spinner>
     </ion-row>
-
     <ion-list *ngIf="!isLoading" no-lines>
-        <ion-item *ngFor="let contest of upComingContests" [class]="contest.Platform">
+        <ion-item *ngFor="let contest of liveContests" [class]="contest.Platform">
             <ion-card>
                 <ion-item class="item-title">
                     <h2>{{contest.Name}}</h2>
@@ -20,15 +19,14 @@
                     <ion-grid>
                         <ion-row no-padding>
                             <ion-col col-auto>
-                                <p>Start: {{contest.StartTime}}</p>
-                                <p>End: {{contest.EndTime}}</p>
-                                <p>Duration: {{contest.Duration}}</p>
+                                <p *ngIf="contest.challenge_type">Type: {{contest.challenge_type}}</p>
+                                <p>Ends at: {{contest.EndTime}}</p>
                             </ion-col>
-                            <ion-col text-right no-padding>
+                            <!-- <ion-col text-right no-padding>
                                 <button ion-button icon-only clear (click)="mCreateEvent(contest)">
                                     <ion-icon name="calendar"></ion-icon>
                                 </button>
-                            </ion-col>
+                            </ion-col> -->
                         </ion-row>
                     </ion-grid>
                 </ion-card-content>

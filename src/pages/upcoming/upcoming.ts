@@ -10,17 +10,14 @@ import { HTTP } from '@ionic-native/http';
 })
 export class UpcomingPage {
 
+    isLoading: boolean;
     upComingContests: Array<Contest> = [];
     constructor(private http: HTTP, public navCtrl: NavController, private platform: Platform, private calendar: Calendar) {
         this.platform.ready().then((readySource) => {
             console.log('Platform ready from', readySource);
             // Platform now ready, execute any required native code
+            this.isLoading = true;
             this.mGetContests();
-            this.calendar.listCalendars().then(
-                data => {
-                    console.log("cals", data);
-                }, err => { }
-            );
         });
     }
 
@@ -49,13 +46,14 @@ export class UpcomingPage {
     mGetContests() {
         this.http.get('https://currentcontests.herokuapp.com/', {}, {})
             .then(data => {
-                console.log('sdjf');
+                this.isLoading = false;
                 data = JSON.parse(data['data']);
                 if (data && data['result']) {
                     this.upComingContests = data['result']['upcoming'];
-                    console.log(this.upComingContests);
+                    console.log('upcoming', this.upComingContests);
                 }
             }).catch(err => {
+                this.isLoading = false;
                 console.log('error', err);
             })
     }

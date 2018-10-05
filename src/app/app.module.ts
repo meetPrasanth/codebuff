@@ -5,7 +5,7 @@ import { Calendar } from '@ionic-native/calendar';
 import { MyApp } from './app.component';
 
 import { AboutPage } from '../pages/about/about';
-import { ContactPage } from '../pages/contact/contact';
+import { LivePage } from '../pages/live/live';
 import { UpcomingPage } from '../pages/upcoming/upcoming';
 import { TabsPage } from '../pages/tabs/tabs';
 
@@ -17,7 +17,7 @@ import { HTTP } from '@ionic-native/http';
     declarations: [
         MyApp,
         AboutPage,
-        ContactPage,
+        LivePage,
         UpcomingPage,
         TabsPage
     ],
@@ -29,7 +29,7 @@ import { HTTP } from '@ionic-native/http';
     entryComponents: [
         MyApp,
         AboutPage,
-        ContactPage,
+        LivePage,
         UpcomingPage,
         TabsPage
     ],
