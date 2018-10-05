@@ -3,7 +3,7 @@
     <name>Code Buff</name>
     <description>An app to track your coding and problem solving challenges to remember.</description>
     <author email="onlyyprasanth@gmail.com">Prasanth Venkatesan</author>
-    <content original-src="index.html" src="http://192.168.1.14:8133" />
+    <content original-src="index.html" src="http://192.168.1.14:8134" />
     <access origin="*" />
     <allow-intent href="http://*/*" />
     <allow-intent href="https://*/*" />
@@ -117,5 +117,6 @@
     <allow-navigation href="http://192.168.1.14:8131" />
     <allow-navigation href="http://192.168.1.14:8132" />
     <allow-navigation href="http://192.168.1.14:8133" />
+    <allow-navigation href="http://192.168.1.14:8134" />
     <engine name="android" spec="7.0.0" />
 </widget>
