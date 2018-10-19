@@ -19,7 +19,9 @@ export class LivePage {
     }
 
     mGetContests() {
-        this.http.get('https://currentcontests.herokuapp.com/', {}, {})
+        // https://currentcontests.herokuapp.com/
+        // http://contesttrackerapi.herokuapp.com/
+        this.http.get('http://contesttrackerapi.herokuapp.com', {}, {})
             .then(data => {
                 this.isLoading = false;
                 data = JSON.parse(data['data']);

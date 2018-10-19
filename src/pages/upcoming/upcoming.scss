@@ -88,9 +88,9 @@
 
     .CODEFORCES {
         ion-card {
-            border-top: 3px solid #F9D058;
+            border-top: 3px solid #455F9D;
             .portal {
-                background: #F9D058;
+                background: #455F9D;
             }
         }
     }
@@ -109,6 +109,15 @@
             border-top: 3px solid #4C83C3;
             .portal {
                 background: #4C83C3; 
+            }
+        }
+    }
+
+    .CODECHEF {
+        ion-card {
+            border-top: 3px solid #743D1F;
+            .portal {
+                background: #743D1F; 
             }
         }
     }
