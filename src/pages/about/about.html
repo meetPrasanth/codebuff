@@ -1,30 +1,38 @@
-
 <ion-content padding>
     <div text-center>
         <img height="40" src="assets/imgs/logo.png" alt="">
     </div>
 
-    <div text-center>
-        
-        <p>Code buff is an application, which is used to have a single place to view all the coding 
-        contests happening across so many different platforms.</p>
-        
-        <p>This app aims to promote and help 
-        grow the competitive programming community worldwide.</p>
+    <ion-list no-lines>
+        <ion-item class="t-label">
+            Code buff is an application, which is used to have a single place to view all the coding
+            contests happening across so many different platforms.
+        </ion-item>
 
-        <p>The app covers popular coding websites such as Codechef, 
-        Codeforces, Topcoder, HackerRank, HackerEarth and others.</p>
-        
-        <p>The app automatically updates all the coding contests beind held 
-        over these platforms and also allows users to set reminders...</p>
+        <ion-item class="t-label">This app aims to promote and help
+            grow the competitive programming community worldwide.</ion-item>
 
-        <div text-center padding>
-            <div>Author: Prasanth Venkatesan</div>
-            <div>If you are facing any issue, please update it on github
-                <a href="https://github.com/meetPrasanth/codebuff/issues">(link)</a>
-            </div>
-        </div>
+        <ion-item class="t-label">The app covers popular coding websites such as Codechef,
+            Codeforces, Topcoder, HackerRank, HackerEarth and others.</ion-item>
 
-    </div>
+        <ion-item class="t-label">The app automatically updates all the coding contests beind held
+            over these platforms and also allows users to set reminders</ion-item>
+
+        <ion-item class="t-label">
+            Made with <ion-icon color="danger" name="heart"></ion-icon> in india.
+        </ion-item>
+
+        <ion-item *ngIf="false" text-center>
+            <button ion-button icon-start color="dark" outline (click)="mRateUs()">
+                <ion-icon name="star-half"></ion-icon>
+                RATE US
+            </button>
+            <button ion-button icon-start color="dark" outline (click)="mShareApp()">
+                <ion-icon name="share"></ion-icon>
+                SHARE APP
+            </button>
+        </ion-item>
+
+    </ion-list>
 
 </ion-content>

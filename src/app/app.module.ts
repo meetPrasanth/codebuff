@@ -2,6 +2,8 @@ import { NgModule, ErrorHandler } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { IonicApp, IonicModule, IonicErrorHandler } from 'ionic-angular';
 import { Calendar } from '@ionic-native/calendar';
+import { AppRate } from '@ionic-native/app-rate';
+import { SocialSharing } from '@ionic-native/social-sharing';
 import { MyApp } from './app.component';
 
 import { AboutPage } from '../pages/about/about';
@@ -37,6 +39,8 @@ import { HTTP } from '@ionic-native/http';
         StatusBar,
         SplashScreen,
         Calendar,
+        AppRate,
+        SocialSharing,
         { provide: ErrorHandler, useClass: IonicErrorHandler },
         HTTP
     ]
