@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { NavController, Platform } from 'ionic-angular';
 import { HTTP } from '@ionic-native/http';
 import { Contest } from '../../shared/models/contest';
+import { InAppBrowser } from '@ionic-native/in-app-browser';
 
 @Component({
     selector: 'page-live',
@@ -11,7 +12,7 @@ export class LivePage {
 
     isLoading: boolean;
     liveContests: Array<Contest> = [];
-    constructor(private http: HTTP, public navCtrl: NavController, private platform: Platform) {
+    constructor(private http: HTTP, public navCtrl: NavController, private platform: Platform, private iab: InAppBrowser) {
         this.platform.ready().then((readySource) => {
             this.isLoading = true;
             this.mGetContests();
@@ -33,6 +34,10 @@ export class LivePage {
                 this.isLoading = false;
                 console.log('error', err);
             })
+    }
+
+    mOpenUrl(contest: Contest) {
+        this.iab.create(contest.url);
     }
 
 }

@@ -3,6 +3,7 @@ import { NavController, Platform } from 'ionic-angular';
 import { Calendar } from '@ionic-native/calendar';
 import { Contest } from '../../shared/models/contest';
 import { HTTP } from '@ionic-native/http';
+import { InAppBrowser } from '@ionic-native/in-app-browser'; 
 
 @Component({
     selector: 'page-upcoming',
@@ -12,7 +13,7 @@ export class UpcomingPage {
 
     isLoading: boolean;
     upComingContests: Array<Contest> = [];
-    constructor(private http: HTTP, public navCtrl: NavController, private platform: Platform, private calendar: Calendar) {
+    constructor(private http: HTTP, private iab: InAppBrowser, public navCtrl: NavController, private platform: Platform, private calendar: Calendar) {
         this.platform.ready().then((readySource) => {
             console.log('Platform ready from', readySource);
             // Platform now ready, execute any required native code
@@ -56,6 +57,10 @@ export class UpcomingPage {
                 this.isLoading = false;
                 console.log('error', err);
             })
+    }
+
+    mOpenUrl(contest: Contest) {
+        this.iab.create(contest.url);
     }
 
     // mGetHackerearth() {

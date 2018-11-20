@@ -15,21 +15,24 @@
                     <h2>{{contest.Name}}</h2>
                     <p class="portal">{{contest.Platform}}</p>
                 </ion-item>
-                <ion-card-content>
+                <ion-card-content style="padding-bottom: 0px;">
                     <ion-grid>
                         <ion-row no-padding>
                             <ion-col col-auto>
                                 <p *ngIf="contest.challenge_type">Type: {{contest.challenge_type}}</p>
                                 <p>Ends at: {{contest.EndTime}}</p>
                             </ion-col>
-                            <!-- <ion-col text-right no-padding>
-                                <button ion-button icon-only clear (click)="mCreateEvent(contest)">
-                                    <ion-icon name="calendar"></ion-icon>
-                                </button>
-                            </ion-col> -->
                         </ion-row>
                     </ion-grid>
                 </ion-card-content>
+                <ion-row>
+                    <ion-col>
+                        <button ion-button icon-start clear small (click)="mOpenUrl(contest)">
+                            <ion-icon name="link"></ion-icon>
+                            <div>Link</div>
+                        </button>
+                    </ion-col>
+                </ion-row>
             </ion-card>
         </ion-item>
     </ion-list>

@@ -1,6 +1,6 @@
-<?xml version='1.1' encoding='utf-8'?>
-<widget id="com.codebuff" version="1.0" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
-    <name>Code Buff</name>
+<?xml version='1.0' encoding='utf-8'?>
+<widget id="com.codebuff" version="2.0" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+    <name>CODE BUFF</name>
     <description>Code buff is an application, which is used to have a single place to view all the coding 
         contests happening across so many different platforms. This app aims to promote and help grow the 
         competitive programming community worldwide. 
@@ -126,7 +126,8 @@
     <allow-navigation href="http://192.168.43.88:8136" />
     <allow-navigation href="http://192.168.43.88:8137" />
     <allow-navigation href="http://192.168.43.88:8138" />
-    <engine name="android" spec="7.0.0" />
     <plugin name="cordova-plugin-apprate" spec="^1.4.0" />
     <plugin name="cordova-plugin-x-socialsharing" spec="^5.4.1" />
+    <engine name="android" spec="7.0.0" />
+    <plugin name="cordova-plugin-inappbrowser" spec="^3.0.0" />
 </widget>
